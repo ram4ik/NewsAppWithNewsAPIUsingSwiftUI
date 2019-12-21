@@ -60,7 +60,7 @@ class getData: ObservableObject {
     @Published var datas = [dataType]()
     
     init() {
-        let source = "https://newsapi.org/v2/top-headlines?country=us&apiKey=be8a8906e19241d5b0965009ba2d2464"
+        let source = "https://newsapi.org/v2/top-headlines?country=ru&apiKey=be8a8906e19241d5b0965009ba2d2464"
         let url = URL(string: source)!
         let session = URLSession(configuration: .default)
         session.dataTask(with: url) { (data, _, err) in
